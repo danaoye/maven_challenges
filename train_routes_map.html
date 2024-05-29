@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5c1d2377b493e023f1c2284268ec0d51 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5c1d2377b493e023f1c2284268ec0d51" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5c1d2377b493e023f1c2284268ec0d51 = L.map(
+                "map_5c1d2377b493e023f1c2284268ec0d51",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_516b4a760087e934baef0c53aab098ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_516b4a760087e934baef0c53aab098ec.addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var poly_line_b23f6dd2e8101d0f4a7196d918d65118 = L.polyline(
+                [[53.4774, -2.23], [53.4073, -2.9775]],
+                {"bubblingMouseEvents": true, "color": "#043364", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#043364", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var marker_d6d19f082ba3b8814b57f4dbe1e82ef5 = L.marker(
+                [53.4774, -2.23],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_e757ed4729630eab6643eef4ee1e3611 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d6d19f082ba3b8814b57f4dbe1e82ef5.setIcon(icon_e757ed4729630eab6643eef4ee1e3611);
+        
+    
+        var popup_4a5ee6c5342cc8ea0fd9b43ebb0b9d65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a87c2f1ff2cf47fcd264d5bca36091f2 = $(`<div id="html_a87c2f1ff2cf47fcd264d5bca36091f2" style="width: 100.0%; height: 100.0%;">Manchester Piccadilly</div>`)[0];
+                popup_4a5ee6c5342cc8ea0fd9b43ebb0b9d65.setContent(html_a87c2f1ff2cf47fcd264d5bca36091f2);
+            
+        
+
+        marker_d6d19f082ba3b8814b57f4dbe1e82ef5.bindPopup(popup_4a5ee6c5342cc8ea0fd9b43ebb0b9d65)
+        ;
+
+        
+    
+    
+            var marker_ad25c8e98c303ac288fcc3e3eb316d20 = L.marker(
+                [53.4073, -2.9775],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_8ce0cce25f871876be8438542ac78972 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ad25c8e98c303ac288fcc3e3eb316d20.setIcon(icon_8ce0cce25f871876be8438542ac78972);
+        
+    
+        var popup_32d644cbe1be0544d8db13277104d16c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c865f25c682fa59bf3603f048b710e01 = $(`<div id="html_c865f25c682fa59bf3603f048b710e01" style="width: 100.0%; height: 100.0%;">Liverpool Lime Street</div>`)[0];
+                popup_32d644cbe1be0544d8db13277104d16c.setContent(html_c865f25c682fa59bf3603f048b710e01);
+            
+        
+
+        marker_ad25c8e98c303ac288fcc3e3eb316d20.bindPopup(popup_32d644cbe1be0544d8db13277104d16c)
+        ;
+
+        
+    
+    
+            var marker_09094a8e4095ee15dff1f53c0262f671 = L.marker(
+                [53.44225, -2.6036499999999996],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var div_icon_c4ba15c58aef504202f1ce3fcf85ec39 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black; background-color: white; border-radius: 50%; padding: 5px; text-align: center;\"\u003e1\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_09094a8e4095ee15dff1f53c0262f671.setIcon(div_icon_c4ba15c58aef504202f1ce3fcf85ec39);
+        
+    
+            var poly_line_91fddacfe7b6c20b51447428b8d9da7e = L.polyline(
+                [[51.5281, -0.1337], [52.4778, -1.8986]],
+                {"bubblingMouseEvents": true, "color": "#445c7c", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#445c7c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var marker_18b61c769d6ea1dc5b0ccbbfb92426ec = L.marker(
+                [51.5281, -0.1337],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_4d7d12cc61bff3ab203663c91856446b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_18b61c769d6ea1dc5b0ccbbfb92426ec.setIcon(icon_4d7d12cc61bff3ab203663c91856446b);
+        
+    
+        var popup_6f109917302826e886b66e46ecf2ed3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_447d34ba1e86089aa229dfdc5bd91b06 = $(`<div id="html_447d34ba1e86089aa229dfdc5bd91b06" style="width: 100.0%; height: 100.0%;">London Euston</div>`)[0];
+                popup_6f109917302826e886b66e46ecf2ed3b.setContent(html_447d34ba1e86089aa229dfdc5bd91b06);
+            
+        
+
+        marker_18b61c769d6ea1dc5b0ccbbfb92426ec.bindPopup(popup_6f109917302826e886b66e46ecf2ed3b)
+        ;
+
+        
+    
+    
+            var marker_ace5e5e4c97b758c57b4dacb7b7eb2b0 = L.marker(
+                [52.4778, -1.8986],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_8da6511bfceb2c46355305ef5737e365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ace5e5e4c97b758c57b4dacb7b7eb2b0.setIcon(icon_8da6511bfceb2c46355305ef5737e365);
+        
+    
+        var popup_31aedeabc8f0f7b47ab0232ee7bff6c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e30e5b844064cc0de7a4d2657b26bea6 = $(`<div id="html_e30e5b844064cc0de7a4d2657b26bea6" style="width: 100.0%; height: 100.0%;">Birmingham New Street</div>`)[0];
+                popup_31aedeabc8f0f7b47ab0232ee7bff6c2.setContent(html_e30e5b844064cc0de7a4d2657b26bea6);
+            
+        
+
+        marker_ace5e5e4c97b758c57b4dacb7b7eb2b0.bindPopup(popup_31aedeabc8f0f7b47ab0232ee7bff6c2)
+        ;
+
+        
+    
+    
+            var marker_2f217761bbc6a7070e8c2e6877d3b67e = L.marker(
+                [52.00275, -1.0159500000000001],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var div_icon_c0986d5a72d3f6906ecbc8fe531b691f = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black; background-color: white; border-radius: 50%; padding: 5px; text-align: center;\"\u003e2\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_2f217761bbc6a7070e8c2e6877d3b67e.setIcon(div_icon_c0986d5a72d3f6906ecbc8fe531b691f);
+        
+    
+            var poly_line_78782385b5bfee16ad22170ef680cded = L.polyline(
+                [[51.5313, -0.1236], [53.9576, -1.093]],
+                {"bubblingMouseEvents": true, "color": "#5f7690", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#5f7690", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var marker_c8356a6ab8750064ad404c032732a1e1 = L.marker(
+                [51.5313, -0.1236],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_749d55a0dff30d0cded3c50302a9a049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_c8356a6ab8750064ad404c032732a1e1.setIcon(icon_749d55a0dff30d0cded3c50302a9a049);
+        
+    
+        var popup_cfe562902baff3f8068abaa558d6969f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43d3083d7c8c506740f5700822f98f28 = $(`<div id="html_43d3083d7c8c506740f5700822f98f28" style="width: 100.0%; height: 100.0%;">London Kings Cross</div>`)[0];
+                popup_cfe562902baff3f8068abaa558d6969f.setContent(html_43d3083d7c8c506740f5700822f98f28);
+            
+        
+
+        marker_c8356a6ab8750064ad404c032732a1e1.bindPopup(popup_cfe562902baff3f8068abaa558d6969f)
+        ;
+
+        
+    
+    
+            var marker_4310e9576e1f23e8763741e82d58a502 = L.marker(
+                [53.9576, -1.093],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_40cb1f46573c70dd7d244b4868325a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4310e9576e1f23e8763741e82d58a502.setIcon(icon_40cb1f46573c70dd7d244b4868325a8c);
+        
+    
+        var popup_2f7882a7eb2638a96ea29ee3a01e4c50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9d2109fb84425ddcbd1e1da805febca = $(`<div id="html_a9d2109fb84425ddcbd1e1da805febca" style="width: 100.0%; height: 100.0%;">York</div>`)[0];
+                popup_2f7882a7eb2638a96ea29ee3a01e4c50.setContent(html_a9d2109fb84425ddcbd1e1da805febca);
+            
+        
+
+        marker_4310e9576e1f23e8763741e82d58a502.bindPopup(popup_2f7882a7eb2638a96ea29ee3a01e4c50)
+        ;
+
+        
+    
+    
+            var marker_fc7eeae1bbe831dd70bf553afe864e42 = L.marker(
+                [52.74415, -0.608],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var div_icon_38ed561274b9e37b923192d8f210fd09 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black; background-color: white; border-radius: 50%; padding: 5px; text-align: center;\"\u003e3\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_fc7eeae1bbe831dd70bf553afe864e42.setIcon(div_icon_38ed561274b9e37b923192d8f210fd09);
+        
+    
+            var poly_line_c3c6587c6f829a9c639e5c5771e24155 = L.polyline(
+                [[51.5153, -0.1764], [51.459, -0.972]],
+                {"bubblingMouseEvents": true, "color": "#768ea4", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#768ea4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var marker_af0371696a61370fd14c5eb48fd1f8cb = L.marker(
+                [51.5153, -0.1764],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_3e2ebe587abd84ba83239aeab8196178 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_af0371696a61370fd14c5eb48fd1f8cb.setIcon(icon_3e2ebe587abd84ba83239aeab8196178);
+        
+    
+        var popup_83944a6c14648873e8f7a65050c99c1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d395a1e3ff6ee2dea389985dc4c2566 = $(`<div id="html_2d395a1e3ff6ee2dea389985dc4c2566" style="width: 100.0%; height: 100.0%;">London Paddington</div>`)[0];
+                popup_83944a6c14648873e8f7a65050c99c1b.setContent(html_2d395a1e3ff6ee2dea389985dc4c2566);
+            
+        
+
+        marker_af0371696a61370fd14c5eb48fd1f8cb.bindPopup(popup_83944a6c14648873e8f7a65050c99c1b)
+        ;
+
+        
+    
+    
+            var marker_212b45fa2369a21a1a125893f2949960 = L.marker(
+                [51.459, -0.972],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_1991ef4d8e0f1a14ea4bbd3220c1ec7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_212b45fa2369a21a1a125893f2949960.setIcon(icon_1991ef4d8e0f1a14ea4bbd3220c1ec7a);
+        
+    
+        var popup_904a972750b356af3d46e2f96c07d829 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5b10d8b28b90eb4b42bb0721d9e451e = $(`<div id="html_d5b10d8b28b90eb4b42bb0721d9e451e" style="width: 100.0%; height: 100.0%;">Reading</div>`)[0];
+                popup_904a972750b356af3d46e2f96c07d829.setContent(html_d5b10d8b28b90eb4b42bb0721d9e451e);
+            
+        
+
+        marker_212b45fa2369a21a1a125893f2949960.bindPopup(popup_904a972750b356af3d46e2f96c07d829)
+        ;
+
+        
+    
+    
+            var marker_e264b25d7291cd721e9d08ea4e745d84 = L.marker(
+                [51.48675, -0.5738000000000001],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var div_icon_03d191631b75f6a90432474c251bc9e1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black; background-color: white; border-radius: 50%; padding: 5px; text-align: center;\"\u003e4\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_e264b25d7291cd721e9d08ea4e745d84.setIcon(div_icon_03d191631b75f6a90432474c251bc9e1);
+        
+    
+            var poly_line_8e64435064ac0aae2765f5de662dccc7 = L.polyline(
+                [[51.5319, -0.1263], [52.4778, -1.8986]],
+                {"bubblingMouseEvents": true, "color": "#c5d1d9", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#c5d1d9", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var marker_ccd3177516283d31b29745b45d7f5dda = L.marker(
+                [51.5319, -0.1263],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_0ee76b7bd179fe66c1749ade084d4751 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ccd3177516283d31b29745b45d7f5dda.setIcon(icon_0ee76b7bd179fe66c1749ade084d4751);
+        
+    
+        var popup_787559269433e932d1043b4693af0f1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4f7350332aca60be9a975121b97c4bf = $(`<div id="html_f4f7350332aca60be9a975121b97c4bf" style="width: 100.0%; height: 100.0%;">London St Pancras</div>`)[0];
+                popup_787559269433e932d1043b4693af0f1e.setContent(html_f4f7350332aca60be9a975121b97c4bf);
+            
+        
+
+        marker_ccd3177516283d31b29745b45d7f5dda.bindPopup(popup_787559269433e932d1043b4693af0f1e)
+        ;
+
+        
+    
+    
+            var marker_37d57b3145ef1a43d733fb69e94db276 = L.marker(
+                [52.4778, -1.8986],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var icon_1699ddec2b8f4d6c379a612390d83774 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_37d57b3145ef1a43d733fb69e94db276.setIcon(icon_1699ddec2b8f4d6c379a612390d83774);
+        
+    
+        var popup_3106de599d1d09bd0f9c5f9bd5ce0491 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_957bb3abc0597c59a743052181ce208a = $(`<div id="html_957bb3abc0597c59a743052181ce208a" style="width: 100.0%; height: 100.0%;">Birmingham New Street</div>`)[0];
+                popup_3106de599d1d09bd0f9c5f9bd5ce0491.setContent(html_957bb3abc0597c59a743052181ce208a);
+            
+        
+
+        marker_37d57b3145ef1a43d733fb69e94db276.bindPopup(popup_3106de599d1d09bd0f9c5f9bd5ce0491)
+        ;
+
+        
+    
+    
+            var marker_33799b561d79702cac5385d2d0688933 = L.marker(
+                [52.00435, -1.0119500000000001],
+                {}
+            ).addTo(map_5c1d2377b493e023f1c2284268ec0d51);
+        
+    
+            var div_icon_7d70865282a5c89464dae5a9d0c89c45 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 10pt; color: black; background-color: white; border-radius: 50%; padding: 5px; text-align: center;\"\u003e5\u003c/div\u003e", "iconAnchor": [15, 15], "iconSize": [30, 30]});
+            marker_33799b561d79702cac5385d2d0688933.setIcon(div_icon_7d70865282a5c89464dae5a9d0c89c45);
+        
+</script>
+</html>
